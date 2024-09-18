@@ -1284,6 +1284,14 @@ static int8_t setup(struct eve_setup_s *qconfig)
 	// AT+CWJAP?
 	console_start(qconfig, "Setting up ESP32.", eve_option_logo);
 
+	err = at_set_cwmode(at_mode_station);
+	if (err != AT_OK)
+	{
+		sprintf(msg, "Failed to set Access Point to station mode %d", err);
+		console_add(qconfig, msg);
+		return err;
+	}
+
 	struct at_query_cwjap_s curr_ap;
 
 	err = at_query_cwjap(&curr_ap);

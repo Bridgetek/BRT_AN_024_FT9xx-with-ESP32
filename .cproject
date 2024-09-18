@@ -40,6 +40,7 @@
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.brtchip.defsym.ft900.debug.base.401714070" name="Defined symbols (-D)" superClass="com.brtchip.defsym.ft900.debug.base" useByScannerDiscovery="true" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__FT900__"/>
+									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="FT32_PORT"/>
 									<listOptionValue builtIn="false" value="FT32_PORT_HEAP=4"/>
 								</option>
